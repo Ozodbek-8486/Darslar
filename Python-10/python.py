@@ -13,7 +13,7 @@
 #         for rang in e:
 #             print(f"   -{rang}")
 #     else:
-        # print(f"{t} {e}")
+#         print(f"{t} {e}")
 
 # f = {
 # "Ali": 85, 
