@@ -90,21 +90,21 @@
 
 
 # 3-topshiriq
-talabalar = {
-    "Ali": {
-        "yosh": 20,
-        "kurs": 2,
-        "universitet": "TATU"
-        },
-    "Vali": {
-        "yosh": 21,
-        "kurs": 3, 
-        "universitet": "SAMDU"
-        }
-}
-print(talabalar)
-print(talabalar["Ali"]["yosh"])
-print(talabalar["Vali"]["universitet"])
+# talabalar = {
+#     "Ali": {
+#         "yosh": 20,
+#         "kurs": 2,
+#         "universitet": "TATU"
+#         },
+#     "Vali": {
+#         "yosh": 21,
+#         "kurs": 3, 
+#         "universitet": "SAMDU"
+#         }
+# }
+# print(talabalar)
+# print(talabalar["Ali"]["yosh"])
+# print(talabalar["Vali"]["universitet"])
 
 
 
