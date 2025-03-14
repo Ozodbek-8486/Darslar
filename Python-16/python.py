@@ -1,84 +1,58 @@
 
-
 # 1-topshiriq
+def anagram(soz1, soz2):
 
+    if soz1.lower() == soz2.lower():
+        print("Anagram")
+    else:
+        print("Anagram emas")
 
-# def anogram(soz_1,soz_2):
-#     if soz_1.lower() == soz_2.lower():
-#         print("So'zlar bir xil")
-#     else:
-#         print("So'zlar bir xil emas")
-# x = input("Birinchi so'zni kiriting: ")
-# y = input("Ikkinchi so'zni kiriting: ")
-# anogram(x,y)
-
+x = input("Birinchi so'zni kiriting: ")
+y = input("Ikkinchi so'zni kiriting: ")
+anagram(x, y)
 
 
 # 2-topshiriq
 
+def tub_sonlar(n):
+    sonlar = []
+    for i in range(2, n+1):
+        tub = True
+        for j in range(2, i):
+            if i % j == 0:
+                tub = False
+                break
+        if tub:
+            sonlar.append(i)
 
-
-# def fibonacci(n):
-#     if n <= 1:
-#         return n
-#     else:
-#         return fibonacci(n-1) + fibonacci(n-2)
-
-# n = int(input("Sonni kiriting: "))
-# print(fibonacci(n))
-
-
-
-
-# 3-topshiriq
-
-
-
-# def tub_sonlar(n):
-#     tub_sonlar = []
-#     for num in range(2, n + 1):
-#         if all(num % i != 0 for i in range(2, int(num**0.5) + 1)):
-#             tub_sonlar.append(num)
-#     return tub_sonlar
-
-# n = int(input("Sonni kiriting: "))
-# print(tub_sonlar(n))    
+    return sonlar
+print(tub_sonlar(20))
 
 
 # 3-topshiriq
 
-# def tub_sonlar(n):
-#     sonlar = []
-#     for i in range(2,n+1):
-#         tub = True
-#         for j in == range(2,i):
-#             tub = False
-#             break
-#         if tub:
-#             sonlar.append(i)
-#     return sonlar
+def palindrom(x,y):
+    if x.lower()[::-1] == y.lower()[::-1]:
+        print("Ushbu so'zlar palindrom")
+    else:
+        print("Ushbu so'zlar palindrom emas")
+soz1 = input("Birinchi so'zni kiriting: ")
+soz2 = input("Ikkinchi so'zni kiriting: ")
+palindrom(soz1, soz2)
 
 
 
 # 4-topshiriq
-def xisobla(n):
+
+def xisobla():
     sonlar = []
     while True:
-        son = int(input(f"Sonni kiriting: "))
-        if str(son).lower() == "stop":
+        son = input(f"Son kiriting(stop orqali to'xtating): ")
+        if son.lower() == "stop":
             break
-            print("Xayr")
-
         else:
             sonlar.append(int(son))
-    print(f"Kiritilgan sonlar yig'indisi: {sum(sonlar)}\nO'rtacha qiymati:{sum(sonlar)}")
-
-       
-xisobla()
-
-
-
-
+    print(f"\nSonlar yig'indisi: {sum(sonlar)}\nO'rta qiymati: {sum(sonlar)/len(sonlar)}")
 
 
 
