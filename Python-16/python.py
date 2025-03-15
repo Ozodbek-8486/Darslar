@@ -55,4 +55,4 @@ def xisobla():
     print(f"\nSonlar yig'indisi: {sum(sonlar)}\nO'rta qiymati: {sum(sonlar)/len(sonlar)}")
 
 
-
+  
