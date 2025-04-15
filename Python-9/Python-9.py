@@ -22,14 +22,14 @@
 # else:
 #     print("Bunday oy yo'q!")
 
-oy = int(input("Oy raqamini kiriting: "))
-if oy in[12,1,2]:
-    print("Qish")
-if oy in[3,4,5]:
-    print("Bahor")
-if oy in[6,7,8]:
-    print("Yoz")
-if oy in[9,10,11]:
-    print("Kuz")
-else:
-    print("bunday oy yo'q!")
+# oy = int(input("Oy raqamini kiriting: "))
+# if oy in[12,1,2]:
+#     print("Qish")
+# if oy in[3,4,5]:
+#     print("Bahor")
+# if oy in[6,7,8]:
+#     print("Yoz")
+# if oy in[9,10,11]:
+#     print("Kuz")
+# else:
+#     print("bunday oy yo'q!")
