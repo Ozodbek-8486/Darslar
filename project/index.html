@@ -1,0 +1,37 @@
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW Project</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Company</div>
+            <button id="theme-toggle" class="text-xl">🌙</button>
+
+            <ul>
+                <li><a href="#xizmatlar">Xizmatlar</a></li>
+                <li><a href="#about">Biz haqimizda</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+                <li><a href="#download" class="btn">Ilovani yuklab olish</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script>
+                const themeToggle = document.getElementById("theme-toggle");
+        const body = document.body;
+    
+        themeToggle.addEventListener("click", () => {
+            body.classList.toggle("bg-gray-900");
+            body.classList.toggle("bg-white");
+            body.classList.toggle("text-black");
+            themeToggle.textContent = body.classList.contains("bg-gray-900") ? "🌙" : "☀️";
+        });
+        
+    </script>
+
+</body>
+</html>
